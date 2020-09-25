@@ -1,13 +1,64 @@
-body {
+/* The general elements style */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body {
+  scroll-behavior: smooth;
+  text-align: center;
+  color: #0b6565;
+  font: 16px/1.2em "Inconsolata", monospace;
+}
+
+/* styling the main content*/
+
+.main-heading,
+.title,
+.bio {
+  margin: 10px;
+  padding: 5px;
+}
+
+footer {
+  background-color: #28a68980;
+}
+
+@media screen and (min-width: 550px) {
+  html,
+  body {
+    font: 18px/1.25em "Inconsolata", monospace;
+  }
+
+  nav {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  nav {
+    width: 50%;
+  }
+
+  .bio {
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  nav {
+    width: 40%;
+  }
+
+  .nav-link {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
 }
